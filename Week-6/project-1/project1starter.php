@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Survey: Survey Name</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
+<title>Survey: Wellness Checkup</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
 </head>
 <body>
 
 
 <!-- TODO: Fix all bugs/poor practice in the form -->
-<form action="" method="get" class="survey">
+<form action="results.php" method="get" class="survey">
 
-<label>Enter your email: </label>
-<input type="email" name="email-name" id="email-id">
+<h1>Wellness Checkup</h1>
 
-<label>Enter your password: </label>
-<input type="text" name="pw-name" id="pw-id">
+<fieldset>
 
-<label>What age are you? </label>
-<input type="radio" name="0" id="1">
-<label>0-12 </label>
-<input type="radio" name="1" id="1">
-<label>13-17 </label>
-<input type="radio" name="2" id="1">
-<label>18-22 </label>
-<input type="radio" name="3" id="1">
-<label>23-27 </label>
-<input type="radio" name="4" id="1">
-<label>28-32 </label>
-<input type="radio" name="5" id="1">
-<label>33-37 </label>
-<input type="radio" name="6" id="1">
-<label>38-42 </label>
-<input type="radio" name="7" id="1">
-<label>43-47 </label>
-<input type="radio" name="8" id="1">
-<label>48-52 </label>
-<input type="radio" name="9" id="1">
-<label>53-57 </label>
-<input type="radio" name="10" id="1">
-<label>58-62 </label>
-<input type="radio" name="11" id="1">
-<label>63-67 </label>
-<input type="radio" name="12" id="1">
-<label>68+ </label>
+    <legend>Personal Info</legend>
 
-<select name="gender" id="gender">
-    <option value="m">Male</option>
-    <option value="f">Female</option>
-    <option value="nb">Nonbinary</option>
-    <option value="gf">Genderfluid</option>
-    <option value="a">Agender</option>
-    <option value="o">Choose not to say/Other</option>
-</select>
+    <label for = "email-input">Enter your email: </label>
+    <input type="email" name="email-name" id="email-id">
+
+    <label for = "pw-input">Enter your password: </label>
+    <input type="text" name="pw-name" id="pw-id">
+
+    <label>What age are you? </label>
+
+    <input type="radio" name="0-12" id="0"><label>0-12 </label>
+    <input type="radio" name="13-17" id="1"><label>13-17 </label>
+    <input type="radio" name="18-22" id="2"><label>18-22 </label>
+    <input type="radio" name="23-27" id="3"><label>23-27 </label>
+    <input type="radio" name="28-32" id="4"><label>28-32 </label>
+    <input type="radio" name="33-37" id="5"><label>33-37 </label>
+    <input type="radio" name="38-42" id="6"><label>38-42 </label>
+    <input type="radio" name="43-47" id="7"><label>43-47 </label>
+    <input type="radio" name="48-52" id="8"><label>48-52 </label>
+    <input type="radio" name="53-57" id="9"><label>53-57 </label>
+    <input type="radio" name="58-62" id="10"><label>58-62 </label>
+    <input type="radio" name="63-67" id="11"><label>63-67 </label>
+    <input type="radio" name="68+" id="12"><label>68+ </label>
+
+    <label>How do you identify?</label>
+
+    <select name="gender" id="gender">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+        <option value="nb">Nonbinary</option>
+        <option value="gf">Genderfluid</option>
+        <option value="a">Agender</option>
+        <option value="o">Choose not to say/Other</option>
+    </select>
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Lets catch up!</legend>
+
+    <label for = "thoughts">How are you feeling?</label>
+    <textarea id = "thoughts">
+    </textarea>
+
+</fieldset>
 
 <!-- TODO: Add your own survey questions -->
 

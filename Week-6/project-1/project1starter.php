@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Survey: Wellness Checkup</title>  
+    <meta charset="utf-8" />
+    <title>Survey: Wellness Checkup</title>  
 </head>
 <body>
 
 <form action="results.php" method="post" class="survey">
+
+<div>
 
 <h1>Wellness Checkup</h1>
 
@@ -14,10 +17,35 @@
     <legend>Sign in:</legend>
 
     <label for = "email-input">Enter your email: </label>
-    <input type="email" name="email-name" id="email-id">
+    <input type="email" name="email-name" id="email-id" required>
 
-    <label for = "pw-input">Enter your password (10 characters minimum): </label>
-    <input type="password" name="pw-name" id="pw-id" minlength = "10" required>
+    <div>
+
+    <label for = "password">Enter your password (8 characters minimum): </label>
+    <input type="password" name="password" id="password" minlength = "8" required>
+
+    <?php
+
+        $globalPassword = '$2y$10$t7eY2wQCX.EQvQg.3S6N6eG1mMZwEl4GMRc8HeT738ADfQvVs.wHm';
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+            $passwordEntered = $_POST['password'];
+
+            if(password_verify($passwordEntered, $globalPassword)){
+
+                echo 'password is valid';
+
+            }else{
+
+                echo 'password is invalid';
+
+            }
+
+        }
+
+    ?>
+
 
 </fieldset>
 
@@ -41,6 +69,8 @@
     <input type="radio" name="63-67" id="11"><label>63-67 </label>
     <input type="radio" name="68+" id="12"><label>68+ </label>
 
+    <div>
+
     <label>How do you identify?</label>
 
     <select name="gender" id="gender">
@@ -62,12 +92,18 @@
     <textarea id = "thoughts" name = "thoughts">
     </textarea>
 
+    <div>
+
     <label for = "scale">On a scale from 1 to 10, do you think you would benifit from talking to someone?<label>
     <input type = "number" id = "scale" name = "scale" min = "1" max = "10">
 
 </fieldset>
 
+<div>
+
 <button type = "submit" name = "submit-button" id = "submit-button">Submit</button>
+
+</div>
 
 </form>
 

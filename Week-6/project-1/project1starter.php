@@ -13,13 +13,19 @@
 
 <fieldset>
 
-    <legend>Personal Info</legend>
+    <legend>Sign in:</legend>
 
     <label for = "email-input">Enter your email: </label>
     <input type="email" name="email-name" id="email-id">
 
     <label for = "pw-input">Enter your password: </label>
     <input type="text" name="pw-name" id="pw-id">
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Personal Info:</legend>
 
     <label>What age are you? </label>
 
@@ -55,8 +61,11 @@
     <legend>Lets catch up!</legend>
 
     <label for = "thoughts">How are you feeling?</label>
-    <textarea id = "thoughts">
+    <textarea id = "thoughts" name = "thoughts">
     </textarea>
+
+    <label for = "scale">On a scale from 1 to 10, do you think you would benifit from talking to someone?<label>
+    <input type = "number" id = "scale" name = "scale" min = "1" max = "10">
 
 </fieldset>
 

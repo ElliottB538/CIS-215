@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form action="results.php" method="get" class="survey">
+<form action="results.php" method="post" class="survey">
 
 <h1>Wellness Checkup</h1>
 
@@ -16,8 +16,8 @@
     <label for = "email-input">Enter your email: </label>
     <input type="email" name="email-name" id="email-id">
 
-    <label for = "pw-input">Enter your password: </label>
-    <input type="text" name="pw-name" id="pw-id">
+    <label for = "pw-input">Enter your password (10 characters minimum): </label>
+    <input type="password" name="pw-name" id="pw-id" minlength = "10" required>
 
 </fieldset>
 
@@ -71,6 +71,6 @@
 
 </form>
 
-<!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
+</body>
 
-</body></html>
+</html>

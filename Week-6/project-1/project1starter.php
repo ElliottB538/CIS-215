@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Survey: Wellness Checkup</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
+<title>Survey: Wellness Checkup</title>  
 </head>
 <body>
 
-
-<!-- TODO: Fix all bugs/poor practice in the form -->
 <form action="results.php" method="get" class="survey">
 
 <h1>Wellness Checkup</h1>
@@ -69,7 +67,7 @@
 
 </fieldset>
 
-<!-- TODO: Add your own survey questions -->
+<button type = "submit" name = "submit-button" id = "submit-button">Submit</button>
 
 </form>
 

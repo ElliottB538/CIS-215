@@ -32,31 +32,31 @@
 
     <label>What age are you? </label>
 
-    <input type="radio" name="age" id="0"><label>0-12 </label>
-    <input type="radio" name="age" id="1"><label>13-17 </label>
-    <input type="radio" name="age" id="2"><label>18-22 </label>
-    <input type="radio" name="age" id="3"><label>23-27 </label>
-    <input type="radio" name="age" id="4"><label>28-32 </label>
-    <input type="radio" name="age" id="5"><label>33-37 </label>
-    <input type="radio" name="age" id="6"><label>38-42 </label>
-    <input type="radio" name="age" id="7"><label>43-47 </label>
-    <input type="radio" name="age" id="8"><label>48-52 </label>
-    <input type="radio" name="age" id="9"><label>53-57 </label>
-    <input type="radio" name="age" id="10"><label>58-62 </label>
-    <input type="radio" name="age" id="11"><label>63-67 </label>
-    <input type="radio" name="age" id="12"><label>68+ </label>
+    <input type="radio" name="age" id="0" value = "0-12"><label>0-12 </label>
+    <input type="radio" name="age" id="1" value = "13-17"><label>13-17 </label>
+    <input type="radio" name="age" id="2" value = "18-22"><label>18-22 </label>
+    <input type="radio" name="age" id="3" value = "23-27"><label>23-27 </label>
+    <input type="radio" name="age" id="4" value = "28-32"><label>28-32 </label>
+    <input type="radio" name="age" id="5" value = "33-37"><label>33-37 </label>
+    <input type="radio" name="age" id="6" value = "38-42"><label>38-42 </label>
+    <input type="radio" name="age" id="7" value = "43-47"><label>43-47 </label>
+    <input type="radio" name="age" id="8" value = "48-52"><label>48-52 </label>
+    <input type="radio" name="age" id="9" value = "53-58"><label>53-57 </label>
+    <input type="radio" name="age" id="10" value = "58-62"><label>58-62 </label>
+    <input type="radio" name="age" id="11" value = "63-67"><label>63-67 </label>
+    <input type="radio" name="age" id="12" value = "68+"><label>68+ </label>
 
     <div>
 
     <label>How do you identify?</label>
 
     <select name="gender" id="gender">
-        <option value="m">Male</option>
-        <option value="f">Female</option>
-        <option value="nb">Nonbinary</option>
-        <option value="gf">Genderfluid</option>
-        <option value="a">Agender</option>
-        <option value="o">Choose not to say/Other</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="nonbinary">Nonbinary</option>
+        <option value="genderfluid">Genderfluid</option>
+        <option value="agender">Agender</option>
+        <option value="other">Choose not to say/Other</option>
     </select>
 
 </fieldset>
@@ -66,7 +66,7 @@
     <legend>Lets catch up!</legend>
 
     <label for = "thoughts">How are you feeling?</label>
-    <textarea id = "thoughts" name = "thoughts" minlength = "20" maxlength = "300">
+    <textarea id = "thoughts" name = "thoughts" minlength = "20" maxlength = "300" placeholder = "Share your thoughts...">
     </textarea>
 
     <div>
@@ -79,7 +79,7 @@
 <div>
 
 <button type = "submit" name = "submit-button" id = "submit-button">Submit</button>
-<button type ="data" name = "data-page" id = "data-page" action = "test.php" >Data Page</button>
+<button type ="button" name = "summary-page" id = "summary-page"><a href = "summary.php">Data Summary Page</a></button>
 
 </div>
 

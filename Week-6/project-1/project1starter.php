@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="results.php" method="post" class="survey">
+<form action="data.php" method="post" class="survey">
 
 <div>
 
@@ -71,7 +71,7 @@
 
     <div>
 
-    <label for = "scale">On a scale from 1 to 10, do you think you would benifit from talking to someone?<label>
+    <label for = "scale">On a scale from 1 to 10, do you think you would benifit from talking to someone?</label>
     <input type = "number" id = "scale" name = "scale" min = "1" max = "10">
 
 </fieldset>
